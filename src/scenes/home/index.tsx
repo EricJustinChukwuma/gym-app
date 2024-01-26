@@ -3,7 +3,6 @@ import ActionButton from '@/shared/ActionButton';
 import { SelectedPage } from '@/shared/types';
 import HomePageText from "@/assets/banner-removebg.png"
 import HomePageGraphic from "@/assets/man-removebg-1.png";
-import HomePageImage from "@/assets/man-removebg-2.png";
 import RedBullSponsor from "@/assets/Neusroom-Logo (1) 1.svg"
 import ForbesSponsor from "@/assets/WeDeyCode.svg";
 import FortuneSponsor from "@/assets/umuIgboUnite.svg";

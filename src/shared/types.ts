@@ -19,22 +19,26 @@ export interface BenefitType {
 
 export interface ClassesType {
     name: string,
-    description: string,
+    description?: string,
     image: string,
-}
+};
 
-class Bike  {
-    constructor(public name: string, public age: number, public phoneNumber: string) {
-        this.name = name;
-        this.age = age;
-        this.phoneNumber = phoneNumber;
-    }
 
-    public getName = () => {
-        return `${this.name} + ${this.age}`
-    }
-}
 
-const Suzuki = new Bike("Suzuki", 26, "09067338753");
 
-console.log(Suzuki.getName())
+
+// class Bike  {
+//     constructor(public name: string, public age: number, public phoneNumber: string) {
+//         this.name = name;
+//         this.age = age;
+//         this.phoneNumber = phoneNumber;
+//     }
+
+//     public getName = () => {
+//         return `${this.name} + ${this.age}`
+//     }
+// }
+
+// const Suzuki = new Bike("Suzuki", 26, "09067338753");
+
+// console.log(Suzuki.getName());

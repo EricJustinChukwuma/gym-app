@@ -54,7 +54,7 @@ const Benefits = ({setSelectedPage}: Props) => {
                 className="md:my-5 md:w-3/5"
                 initial="hidden"
                 whileInView={"visible"}
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5}}
                 variants={{
                     hidden: { opacity: 0, x: -50},

@@ -16,12 +16,11 @@ const classes: Array<ClassesType> = [
         image: image1,
     },
     {
-        name: "Ab Core Training",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit error debitis qui, at earum hic, nobis tempore, animi perspiciatis ab dolores! Veniam quod quasi distinctio!",
+        name: "Yoga Class",
         image: image2,
     },
     {
-        name: "Leg Training",
+        name: "Abs Core Training",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit error debitis qui, at earum hic, nobis tempore, animi perspiciatis ab dolores! Veniam quod quasi distinctio!",
         image: image3,
     },
@@ -32,7 +31,6 @@ const classes: Array<ClassesType> = [
     },
     {
         name: "Fitness Classes",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit error debitis qui, at earum hic, nobis tempore, animi perspiciatis ab dolores! Veniam quod quasi distinctio!",
         image: image5,
     },
     {
@@ -75,9 +73,9 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             <div className="mt-10 h-[350px] w-full overflow-x-auto overflow-y-hidden">
                 <ul className="w-[2800px] whitespace-nowrap flex mr-10">
                     {
-                        classes.map((item, index) => (
+                        classes.map((item: ClassesType, index) => (
                             <Class 
-                                key={index} 
+                                key={`${item.name}-${index}`} 
                                 name={item.name} 
                                 description={item.description} 
                                 image={item.image} 
